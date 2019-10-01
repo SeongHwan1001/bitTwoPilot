@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="app.account.mapper.AccountMapper">
+  <select id="count" resultType="int">
+    SELECT
+      COUNT(*)
+    FROM account
+  </select>
+  <insert id="create" parameterType="AccountVO" useGeneratedKeys="true" keyProperty="idx">
+    INSERT INTO account 
+      (userid,pw,email,nickname,zipcode,address,extraaddress)
+    VALUES 
+      (#{userid},#{pw},#{email},#{nickname},#{zipcode},#{address},#{extraaddress});
+  </insert>
+</mapper>

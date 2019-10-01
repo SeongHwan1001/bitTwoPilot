@@ -1,0 +1,43 @@
+# domain http://localhost:18080
+
+# list
+###
+GET http://localhost:18080/account HTTP/1.1
+
+###
+GET http://localhost:18080/account/ HTTP/1.1
+
+###
+GET http://localhost:18080/account/1 HTTP/1.1
+
+# read
+###
+GET http://localhost:18080/account/read/1 HTTP/1.1
+
+# create
+###
+GET http://localhost:18080/account/create HTTP/1.1
+
+# update
+###
+GET http://localhost:18080/account/update/1 HTTP/1.1
+
+############## excute ###############
+
+# create
+###
+POST http://localhost:18080/account/create HTTP/1.1
+
+account_idx=1&title=1&content=1
+
+# update
+###
+POST http://localhost:18080/account/update/1 HTTP/1.1
+
+account_idx=1&title=1&content=1
+
+# delete
+###
+POST http://localhost:18080/account/delete/1 HTTP/1.1
+
+account_idx=1&title=1&content=1

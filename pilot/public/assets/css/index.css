@@ -1,0 +1,32 @@
+.wrapper {
+  height: 60rem;
+
+}
+
+header {
+  min-height: 20%;
+}
+
+nav {
+  min-height: 20%;
+}
+
+.content {
+  min-height: 80%;
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  flex: 1;
+}
+
+section {
+  width: 60%;
+  flex: 3;
+}
+
+footer {
+  min-height: 20%;
+
+}
